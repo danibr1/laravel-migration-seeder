@@ -17,7 +17,7 @@
         @endforeach
 
         <section class="mt-5">
-            {{ $trip->links() }}
+            {{ $trips->links() }}
         </section>
 
     </div>

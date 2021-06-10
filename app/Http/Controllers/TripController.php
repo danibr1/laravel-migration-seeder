@@ -9,7 +9,10 @@ class TripController extends Controller
 {
     public function index() {
 
-        $trips = Trip::all();
+        //PAGINATE
+        $trips = Trip::paginate(3);
+
+        //$trips = Trip::all();
 
         return view( ('trips'), compact('trips') );
     }
